@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+}
+h3{
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700 !important;
+  font-size: 30px;
+  color: #194350;
+}
+.completed {
+  text-decoration: line-through;
+  cursor:pointer;
+}
+.table-container {
+    padding: 32px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .table-container h2.table-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+
+  }
+  
+  .table-container table {
+    width: 95%;
+    background: #fff;
+    color: #222;
+    padding: 24px;
+    box-shadow: 0 4px 15px -8px rgba(0, 0, 0, 0.4);
+    border-collapse: collapse;
+    margin-left: 30px;
+  }
+  
+  .table-container table thead tr {
+    background: #1687a7;
+    color: #fff;
+  }
+  .table-container table tbody tr {
+    background: #d3e0ea;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+  }
+  
+  .table-container table td,
+  .table-container table th {
+    padding: 16px 32px;
+    text-align: center;
+  }
+  
+  .table-container table tr {
+    border-bottom: 1px solid #eee;
+  }
+  
+  
+  
+  @media (max-width: 580px) {
+    .table-container table thead {
+      display: none;
+    }
+  
+    .table-container table td {
+      display: block;
+    }
+  
+    .table-container table td::before {
+      content: attr(data-heading) ": ";
+      font-weight: bold;
+    }
+  }
+  
+ 
